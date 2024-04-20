@@ -51,7 +51,7 @@
     {
         "forecast": "thunderstorms",
         "image": {
-            "src": "../src/images/storm.png",
+            "src": "../src/images/thunderstorm.png",
             "alt": "thunderstorms"
         }
     },
