@@ -1,0 +1,17 @@
+@import url('../../styles/variables.css');
+
+.nav {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-around;
+    width: 150px;
+}
+
+.menuItem {
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+}

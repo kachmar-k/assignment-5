@@ -1,0 +1,27 @@
+@import url('../../styles/variables.css');
+
+.tile {
+    border: solid;
+    border-width: 2.5px;
+    border-radius: 15px;
+    border-color: white;
+    width: 10vw;
+    min-width: 170px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 3px;
+    text-align: center;
+    color: white;
+    margin: 10px;
+}
+
+.weatherInfo {
+    margin: 1px !important;
+}
+
+.image {
+    width: 120px;
+    margin: 10px;
+    align-self: center;
+}

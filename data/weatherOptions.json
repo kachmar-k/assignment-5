@@ -1,0 +1,72 @@
+[
+    {
+        "forecast": "mostly cloudy",
+        "image": {
+            "src": "../src/images/mostly-cloudy.png",
+            "alt": "mostly cloudy"
+        }
+    },
+    {
+        "forecast": "mostly clear",
+        "image": {
+            "src": "../src/images/partly-cloudy.png",
+            "alt": "mostly clear"
+        }
+    },
+    {
+        "forecast": "mostly sunny",
+            "image": {
+            "src": "../src/images/partly-cloudy.png",
+            "alt": "mostly sunny"
+        }
+    },
+    {
+        "forecast": "partly cloudy",
+        "image": {
+            "src": "../src/images/partly-cloudy.png",
+            "alt": "partly cloudy"
+        }
+    },
+    {
+        "forecast": "cloudy",
+        "image": {
+            "src": "../src/images/cloudy.png",
+            "alt": "cloudy"
+        }
+    },
+    {
+        "forecast": "showers",
+        "image": {
+            "src": "../src/images/rain.png",
+            "alt": "showers"
+        }
+    },
+    {
+        "forecast": "rain",
+        "image": {
+            "src": "../src/images/rain.png",
+            "alt": "rain"
+        }
+    },
+    {
+        "forecast": "thunderstorms",
+        "image": {
+            "src": "../src/images/storm.png",
+            "alt": "thunderstorms"
+        }
+    },
+    {
+        "forecast": "sunny",
+        "image": {
+            "src": "../src/images/sunny.png",
+            "alt": "sunny"
+        }
+    },
+    {
+        "forecast": "clear",
+        "image": {
+            "src": "../src/images/sunny",
+            "alt": "clear"
+        }
+    }
+]

@@ -1,0 +1,315 @@
+{
+    "@context": {
+      "@version": "1.1"
+    },
+    "type": "Feature",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -73.0523986,
+            42.0399131
+          ],
+          [
+            -73.03679650000001,
+            42.0393104
+          ],
+          [
+            -73.00869750000001,
+            42.0388107
+          ],
+          [
+            -73.0205001,
+            42.0001106
+          ],
+          [
+            -73.02949520000001,
+            41.966613699999996
+          ],
+          [
+            -73.01749420000002,
+            41.967513999999994
+          ],
+          [
+            -72.99979400000002,
+            41.96851339999999
+          ],
+          [
+            -72.96189880000003,
+            41.97041319999999
+          ],
+          [
+            -72.94179530000002,
+            41.97101209999999
+          ],
+          [
+            -72.89499660000003,
+            41.97291179999999
+          ],
+          [
+            -72.88710020000002,
+            41.97311399999999
+          ],
+          [
+            -72.89959710000002,
+            41.93941109999999
+          ],
+          [
+            -72.90619650000002,
+            41.921012799999986
+          ],
+          [
+            -72.91529840000003,
+            41.89681239999999
+          ],
+          [
+            -72.93989560000003,
+            41.89531319999999
+          ],
+          [
+            -72.94259640000003,
+            41.88931269999999
+          ],
+          [
+            -72.94629660000003,
+            41.87701409999999
+          ],
+          [
+            -72.94629660000003,
+            41.874610899999986
+          ],
+          [
+            -72.94729610000003,
+            41.87141029999999
+          ],
+          [
+            -72.95349880000003,
+            41.85421369999999
+          ],
+          [
+            -72.95379630000004,
+            41.84861369999999
+          ],
+          [
+            -72.95189660000004,
+            41.843612599999986
+          ],
+          [
+            -72.94319910000004,
+            41.84321209999999
+          ],
+          [
+            -72.93649290000005,
+            41.84011069999999
+          ],
+          [
+            -72.94009390000005,
+            41.82991399999999
+          ],
+          [
+            -72.94149780000005,
+            41.82661049999999
+          ],
+          [
+            -72.94689940000005,
+            41.812511399999984
+          ],
+          [
+            -72.94899740000005,
+            41.806411699999984
+          ],
+          [
+            -72.99849700000006,
+            41.80021279999998
+          ],
+          [
+            -73.01669310000005,
+            41.798210099999984
+          ],
+          [
+            -73.50219720000005,
+            41.666011799999985
+          ],
+          [
+            -73.50729370000005,
+            41.66561119999999
+          ],
+          [
+            -73.51020050000005,
+            41.66641229999998
+          ],
+          [
+            -73.51359550000005,
+            41.666110899999985
+          ],
+          [
+            -73.51739500000005,
+            41.66641229999998
+          ],
+          [
+            -73.51779930000005,
+            41.671012799999986
+          ],
+          [
+            -73.51669310000005,
+            41.688712999999986
+          ],
+          [
+            -73.51429740000006,
+            41.713611599999986
+          ],
+          [
+            -73.51199340000007,
+            41.740112299999986
+          ],
+          [
+            -73.51099390000006,
+            41.75871269999998
+          ],
+          [
+            -73.50499720000006,
+            41.82341379999998
+          ],
+          [
+            -73.50189970000007,
+            41.858512799999986
+          ],
+          [
+            -73.49829860000007,
+            41.89251319999998
+          ],
+          [
+            -73.49729910000006,
+            41.906612299999985
+          ],
+          [
+            -73.49649810000007,
+            41.922111499999986
+          ],
+          [
+            -73.49289700000007,
+            41.95891179999999
+          ],
+          [
+            -73.48959350000007,
+            42.000110599999985
+          ],
+          [
+            -73.48729700000007,
+            42.04961009999999
+          ],
+          [
+            -73.43279260000007,
+            42.05061339999999
+          ],
+          [
+            -73.42629240000007,
+            42.050510399999986
+          ],
+          [
+            -73.29359430000007,
+            42.047012299999984
+          ],
+          [
+            -73.28759760000007,
+            42.04671089999999
+          ],
+          [
+            -73.25579830000007,
+            42.04581059999999
+          ],
+          [
+            -73.23749540000007,
+            42.04511259999999
+          ],
+          [
+            -73.23349760000008,
+            42.04511259999999
+          ],
+          [
+            -73.22419730000007,
+            42.04471199999999
+          ],
+          [
+            -73.14819330000007,
+            42.04271309999999
+          ],
+          [
+            -73.05969230000008,
+            42.040012299999994
+          ],
+          [
+            -73.0523986,
+            42.0399131
+          ]
+        ]
+      ]
+    },
+    "properties": {
+      "zone": "https://api.weather.gov/zones/forecast/CTZ001",
+      "updated": "2024-04-07T19:21:00-04:00",
+      "periods": [
+        {
+          "number": 1,
+          "name": "Tonight",
+          "detailedForecast": "Mostly clear. Cold with lows in the upper 20s. Northwest winds 5 to 10 mph."
+        },
+        {
+          "number": 2,
+          "name": "Monday",
+          "detailedForecast": "Sunny. Highs in the lower 60s. Northwest winds around 5 mph."
+        },
+        {
+          "number": 3,
+          "name": "Monday Night",
+          "detailedForecast": "Mostly cloudy. Not as cool with lows in the lower 40s. West winds around 5 mph."
+        },
+        {
+          "number": 4,
+          "name": "Tuesday",
+          "detailedForecast": "Mostly sunny. Highs in the upper 60s. Northwest winds around 5 mph, becoming southwest around 5 mph in the afternoon."
+        },
+        {
+          "number": 5,
+          "name": "Tuesday Night",
+          "detailedForecast": "Mostly cloudy. Lows in the lower 40s. Southeast winds 5 to 10 mph."
+        },
+        {
+          "number": 6,
+          "name": "Wednesday and Wednesday Night",
+          "detailedForecast": "Showers likely. Highs in the lower 50s. Lows in the mid 40s. Chance of rain 60 percent."
+        },
+        {
+          "number": 7,
+          "name": "Thursday",
+          "detailedForecast": "Showers likely in the morning, then showers in the afternoon. Highs in the upper 50s. Chance of rain 90 percent."
+        },
+        {
+          "number": 8,
+          "name": "Thursday Night",
+          "detailedForecast": "Showers. A chance of thunderstorms after midnight. Breezy with lows in the lower 50s. Chance of rain 90 percent."
+        },
+        {
+          "number": 9,
+          "name": "Friday",
+          "detailedForecast": "Showers with a chance of thunderstorms in the morning, then showers likely in the afternoon. Breezy with highs in the lower 60s. Chance of rain 80 percent."
+        },
+        {
+          "number": 10,
+          "name": "Friday Night",
+          "detailedForecast": "Partly cloudy with showers likely in the evening, then mostly cloudy with a chance of showers after midnight. Cooler with lows in the lower 40s. Chance of rain 60 percent."
+        },
+        {
+          "number": 11,
+          "name": "Saturday",
+          "detailedForecast": "Partly sunny. Highs in the mid 50s."
+        },
+        {
+          "number": 12,
+          "name": "Saturday Night and Sunday",
+          "detailedForecast": "Partly cloudy. Lows around 40. Highs in the lower 60s."
+        }
+      ]
+    }
+  }

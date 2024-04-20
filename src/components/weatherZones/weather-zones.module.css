@@ -1,0 +1,26 @@
+@import url('../../styles/variables.css');
+
+.listItem {
+    color: white !important;
+    list-style: none;
+    text-decoration: none !important; 
+}
+.stateList {
+    width: 250px;
+    height: 85vh;
+    overflow-y: scroll;
+}
+
+.stateList::-webkit-scrollbar {
+    display: none;
+}
+
+
+.stateList:hover{
+    cursor:ns-resize
+}
+
+.container {
+    display:flex
+    
+}
