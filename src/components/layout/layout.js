@@ -16,18 +16,18 @@ const Layout = (props) => {
         }`);
 
     return (
-        <div class={content}>
-            <header class={header}>
-            <div class={left}>
+        <div className={content}>
+            <header className={header}>
+            <div className={left}>
                 <StaticImage src="../../images/partly-cloudy.png" height={50} alt="New England icon"></StaticImage>
-                <h1 class={headerText}>{data.site.siteMetadata.title}</h1>
+                <h1 className={headerText}>{data.site.siteMetadata.title}</h1>
             </div>
                 <Navigation></Navigation>
             </header>
             <main>
                 {children}
             </main>
-            <footer class={footer}>
+            <footer className={footer}>
                 <p>Assignments 4 and 5 for Harvard Extension School CSCI E-114</p>
             </footer>
         </div>

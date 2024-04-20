@@ -3,7 +3,7 @@ import Layout from '../components/layout/layout'
 import { graphql } from 'gatsby';
 import WeatherTile from "../components/weather-tile/weather-tile";
 
-const WeatherPage = ({pageContext, data}) => {
+const WeatherPage = ({data}) => {
   const weather = data.allWeatherZone.nodes[0];
   const weeklyForecast = [];
 
@@ -18,7 +18,7 @@ const WeatherPage = ({pageContext, data}) => {
         { 
           weeklyForecast.map((day) => {
             return (
-                <WeatherTile dailyForecast={day}></WeatherTile>
+                <WeatherTile dailyForecast={day} key={day.name}></WeatherTile>
             )
           })
         }
@@ -27,7 +27,7 @@ const WeatherPage = ({pageContext, data}) => {
         <h3>Detailed Summary</h3>
         {
           weeklyForecast.map((day) => {
-            return(<p style={{margin: '0'}}><span style={{fontWeight: '700'}}>{day.name}: </span> {day.detailedForecast}</p>)
+            return(<p style={{margin: '0'}} key={day.name}><span style={{fontWeight: '700'}}>{day.name}: </span> {day.detailedForecast}</p>)
           })
         }
       </div>

@@ -1,7 +1,5 @@
 import * as React from "react"
 import Layout from '../components/layout/layout'
-import { graphql, useStaticQuery } from 'gatsby';
-import WeatherTile from "../components/weather-tile/weather-tile";
 
 const AboutPage = () => {
 

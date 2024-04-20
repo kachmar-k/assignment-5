@@ -48,8 +48,8 @@ const WeatherTile = (props) => {
     const weatherInfo = getWeather();
 
     return(
-        <div class={tile}>
-            <h2 class={weatherInfo}>{dailyForecast.name}</h2>
+        <div className={tile}>
+            <h2 className={weatherInfo}>{dailyForecast.name}</h2>
             <GatsbyImage image={getImage(weatherInfo.image?.src?.childImageSharp)} alt="forecast"></GatsbyImage>
             <p>{getWeather().forecast}</p>
             <br/>

@@ -2,7 +2,7 @@ import * as React from 'react'
 import { listItem, stateList, container } from './weather-zones.module.css'
 import { graphql, useStaticQuery, Link } from 'gatsby';
 
-const WeatherZones = (props) => {
+const WeatherZones = () => {
     const zones = useStaticQuery(graphql`
     query {
         allWeatherZone(sort: {name: ASC}) {
@@ -17,14 +17,14 @@ const WeatherZones = (props) => {
 
       function returnStateList(category) {
         return(<div>
-            <div class={stateList}>
-            <h2 class={listItem}>{category}</h2>
+            <div className={stateList}>
+            <h2 className={listItem}>{category}</h2>
                 {zones.map((zone) => {
                     const link = zone.name.toLowerCase().replaceAll(' ', '-');
                     if(zone.state === category) {
                         return (
-                            <li key={zone.id} class={listItem}>
-                                <Link to={link} class={listItem}>{zone.name}</Link>
+                            <li key={zone.id} className={listItem}>
+                                <Link to={link} className={listItem}>{zone.name}</Link>
                             </li>
                         )
                     } 
@@ -34,7 +34,7 @@ const WeatherZones = (props) => {
       }
 
     return(
-        <div class={container}>
+        <div className={container}>
                 {returnStateList("ME")}
                 {returnStateList("VT")}
                 {returnStateList("NH")}
