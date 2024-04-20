@@ -39,7 +39,6 @@ const WeatherTile = (props) => {
                     }
                 }
             });
-            console.log(displayForecast)
             return displayForecast.weather
         }
     }
