@@ -65,7 +65,7 @@
     {
         "forecast": "clear",
         "image": {
-            "src": "../src/images/sunny",
+            "src": "../src/images/sunny.png",
             "alt": "clear"
         }
     }
