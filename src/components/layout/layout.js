@@ -28,7 +28,7 @@ const Layout = (props) => {
                 {children}
             </main>
             <footer class={footer}>
-                <p>Assignment 4 for Harvard Extension School CSCI E-114</p>
+                <p>Assignments 4 and 5 for Harvard Extension School CSCI E-114</p>
             </footer>
         </div>
     )
