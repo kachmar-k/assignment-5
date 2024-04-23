@@ -14,7 +14,7 @@ const WeatherPage = ({ data }) => {
   }
 
   // weather alerts
-  const [weatherAlert, setWeatherAlert] = useState({});
+  const [weatherAlert] = useState({});
   useEffect(() => {
     console.log(`USE EFFECT`);
     fetch(`../netlify/functions/weatherAlertsApi?zoneId=${weather.zoneId}`, {
