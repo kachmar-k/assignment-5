@@ -2,3 +2,5 @@ node_modules/
 .cache/
 .eleventy-cache
 public
+# Local Netlify folder
+.netlify
