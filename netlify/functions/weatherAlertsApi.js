@@ -10,7 +10,7 @@ const handler = async function (event, context) {
 
     return {
       statusCode: 200,
-      body: data,
+      body: response,
     };
   } catch (error) {
     console.error(`Error with request.`, {
