@@ -15,7 +15,7 @@ const handler = async function (event, context) {
     console.log(responseBody);
     return {
       statusCode: 200,
-      body: responseBody,
+      body: JSON.stringify(responseBody),
     };
   } catch (error) {
     console.error(`Error with request.`, {
