@@ -17,21 +17,21 @@ const WeatherPage = ({ data }) => {
   const [weatherAlert] = useState({});
   let alertText = {};
   useEffect(() => {
-    console.log(`USE EFFECT`);
-    fetch(
+    let response = fetch(
       `./../../.netlify/functions/weatherAlertsApi?zoneId=${weather.zoneId}`,
       {
         method: "GET",
       }
     )
-      .then((response) => {
-        console.log(JSON.stringify(response));
-        return response.json();
+      .then((result) => {
+        return result.json();
       })
       .then((json) => {
-        console.log(json.data);
-        if (json?.data?.isActive) {
-          alertText = json.data;
+        if (json.data) {
+        }
+        if (json.isActive) {
+          alertText = json;
+          alert(`${weather.name} Weather Alert \n ${alertText.alert}`);
         }
       })
       .catch((error) => {
@@ -43,9 +43,9 @@ const WeatherPage = ({ data }) => {
     <Layout>
       <h2 style={{ color: "white", marginLeft: "1.25vw" }}>{weather.name}</h2>
       <div>
-        {alertText?.alert}
+        {alertText.alert}
         <br></br>
-        {alertText?.description}
+        {alertText.description}
       </div>
       <div style={{ display: "flex", justifyContent: "space-evenly" }}>
         {weeklyForecast.map((day) => {
