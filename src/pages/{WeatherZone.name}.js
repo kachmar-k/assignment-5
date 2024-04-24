@@ -15,6 +15,7 @@ const WeatherPage = ({ data }) => {
 
   // weather alerts
   const [weatherAlert] = useState({});
+  let alertText = {};
   useEffect(() => {
     console.log(`USE EFFECT`);
     fetch(
@@ -30,7 +31,7 @@ const WeatherPage = ({ data }) => {
       .then((json) => {
         console.log(json.data);
         if (json.data.isActive) {
-          alert(json.data.alert);
+          alertText = json.data;
         }
       })
       .catch((error) => {
@@ -41,6 +42,11 @@ const WeatherPage = ({ data }) => {
   return (
     <Layout>
       <h2 style={{ color: "white", marginLeft: "1.25vw" }}>{weather.name}</h2>
+      <div style={{ backgroundColor: "red" }}>
+        {alertText?.alert}
+        <br></br>
+        {alertText.description}
+      </div>
       <div style={{ display: "flex", justifyContent: "space-evenly" }}>
         {weeklyForecast.map((day) => {
           return <WeatherTile dailyForecast={day} key={day.name}></WeatherTile>;
