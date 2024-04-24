@@ -1,5 +1,4 @@
-import { fetchRequest } from "../../gatsby-node";
-const fetch = require("node-fetch");
+const fetchRequest = require("../../fetchRequest");
 
 const handler = async function (event, context) {
   const { zoneId } = event.queryStringParameters;
