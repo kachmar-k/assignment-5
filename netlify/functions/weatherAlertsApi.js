@@ -2,12 +2,6 @@ import { fetchRequest } from "../../gatsby-node";
 const fetch = require("node-fetch");
 
 const handler = async function (event, context) {
-  return {
-    statusCode: 200,
-    body: JSON.stringify({
-      message: "Hello World!",
-    }),
-  };
   const { zoneId } = event.queryStringParameters;
   console.log(`HANDLER`);
   try {
