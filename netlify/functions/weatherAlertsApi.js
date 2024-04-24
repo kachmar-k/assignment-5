@@ -5,7 +5,7 @@ const handler = async function (event, context) {
   console.log(`HANDLER`);
   try {
     let apiUrl = `alerts/active/zone/${zoneId}`;
-    const response = await fetchRequest(apiUrl, null);
+    const response = await fetchRequest(apiUrl, null, false);
     console.log(response);
 
     return {

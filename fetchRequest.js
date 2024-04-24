@@ -1,7 +1,7 @@
 const eleventyFetch = require("@11ty/eleventy-fetch");
 
 // Re-using generic fetch request function I created in the last assignment
-const fetchRequest = async (api, parameters) => {
+const fetchRequest = async (api, parameters, cache) => {
   const cacheDuration = "1d";
   const weatherBaseUrl = "https://api.weather.gov/";
   let baseUrl = weatherBaseUrl + api;
@@ -9,6 +9,13 @@ const fetchRequest = async (api, parameters) => {
   let queryString = params.toString();
   let requestUrl = `${baseUrl}?${queryString}`;
   console.log(requestUrl);
+  if (cache === false) {
+    respose = await fetch(requestUrl, {
+      method: "GET",
+    });
+    console.log(response);
+    return response;
+  }
   response = await eleventyFetch(requestUrl, {
     duration: cacheDuration,
     type: "json",
