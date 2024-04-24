@@ -18,7 +18,7 @@ const WeatherPage = ({ data }) => {
   useEffect(() => {
     console.log(`USE EFFECT`);
     fetch(
-      `./../../netlify/functions/weatherAlertsApi?zoneId=${weather.zoneId}`,
+      `./../../.netlify/functions/weatherAlertsApi?zoneId=${weather.zoneId}`,
       {
         method: "GET",
       }

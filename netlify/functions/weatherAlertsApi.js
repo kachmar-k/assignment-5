@@ -12,7 +12,6 @@ const handler = async function (event, context) {
       alert: alertData.properties?.headline,
       description: alertData.properties?.description,
     };
-    console.log(responseBody);
     return {
       statusCode: 200,
       body: JSON.stringify(responseBody),
