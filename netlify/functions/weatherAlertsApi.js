@@ -6,7 +6,6 @@ const handler = async function (event, context) {
   try {
     let apiUrl = `alerts/active/zone/${zoneId}`;
     const response = await fetchRequest(apiUrl, null, false);
-    console.log(response);
 
     return {
       statusCode: 200,

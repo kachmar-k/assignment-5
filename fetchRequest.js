@@ -12,7 +12,7 @@ const fetchRequest = async (api, parameters, cache) => {
   if (cache === false) {
     response = await fetch(requestUrl, {
       method: "GET",
-    });
+    }).json();
     console.log(response);
     return response;
   }
