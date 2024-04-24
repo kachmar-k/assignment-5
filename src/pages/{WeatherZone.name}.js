@@ -29,6 +29,9 @@ const WeatherPage = ({ data }) => {
       })
       .then((json) => {
         console.log(json.data);
+        if (json.data.isActive) {
+          alert(json.data.alert);
+        }
       })
       .catch((error) => {
         console.log(error);

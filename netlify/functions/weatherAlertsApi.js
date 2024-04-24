@@ -6,12 +6,22 @@ const handler = async function (event, context) {
     let apiUrl = `alerts/active/zone/${zoneId}`;
     const response = await fetchRequest(apiUrl, null, false);
     let alertData = response.features[0];
-    let responseBody = {
-      title: alertData.title,
-      updated: alertData.updated,
-      alert: alertData.properties?.headline,
-      description: alertData.properties?.description,
-    };
+    let responseBody;
+    if (alertData) {
+      responseBody = {
+        isActive: true,
+        title: alertData.title,
+        updated: alertData.updated,
+        alert: alertData.properties?.headline,
+        description: alertData.properties?.description,
+      };
+    } else {
+      responseBody = {
+        isActive: false,
+        title: "No advisories at this time",
+        updated: Date.now().toLocaleString(),
+      };
+    }
     return {
       statusCode: 200,
       body: JSON.stringify(responseBody),
