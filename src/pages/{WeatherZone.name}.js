@@ -30,7 +30,7 @@ const WeatherPage = ({ data }) => {
       })
       .then((json) => {
         console.log(json.data);
-        if (json.data.isActive) {
+        if (json?.data?.isActive) {
           alertText = json.data;
         }
       })
@@ -42,7 +42,7 @@ const WeatherPage = ({ data }) => {
   return (
     <Layout>
       <h2 style={{ color: "white", marginLeft: "1.25vw" }}>{weather.name}</h2>
-      <div style={{ backgroundColor: "red" }}>
+      <div>
         {alertText?.alert}
         <br></br>
         {alertText?.description}
