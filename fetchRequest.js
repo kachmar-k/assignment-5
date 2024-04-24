@@ -13,7 +13,7 @@ const fetchRequest = async (api, parameters, cache) => {
     response = await fetch(requestUrl, {
       method: "GET",
     });
-    const data = response.json();
+    const data = await response.json();
     console.log(data);
     return data;
   }
