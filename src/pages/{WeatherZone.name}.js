@@ -45,7 +45,7 @@ const WeatherPage = ({ data }) => {
       <div style={{ backgroundColor: "red" }}>
         {alertText?.alert}
         <br></br>
-        {alertText.description}
+        {alertText?.description}
       </div>
       <div style={{ display: "flex", justifyContent: "space-evenly" }}>
         {weeklyForecast.map((day) => {
