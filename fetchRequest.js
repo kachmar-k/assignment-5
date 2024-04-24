@@ -8,13 +8,11 @@ const fetchRequest = async (api, parameters, cache) => {
   let params = new URLSearchParams(parameters);
   let queryString = params.toString();
   let requestUrl = `${baseUrl}?${queryString}`;
-  console.log(requestUrl);
   if (cache === false) {
     response = await fetch(requestUrl, {
       method: "GET",
     });
     const data = await response.json();
-    console.log(data);
     return data;
   }
   response = await eleventyFetch(requestUrl, {
