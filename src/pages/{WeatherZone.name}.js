@@ -17,10 +17,14 @@ const WeatherPage = ({ data }) => {
   const [weatherAlert] = useState({});
   useEffect(() => {
     console.log(`USE EFFECT`);
-    fetch(`../netlify/functions/weatherAlertsApi?zoneId=${weather.zoneId}`, {
-      method: "GET",
-    })
+    fetch(
+      `./../../netlify/functions/weatherAlertsApi?zoneId=${weather.zoneId}`,
+      {
+        method: "GET",
+      }
+    )
       .then((response) => {
+        console.log(JSON.stringify(response));
         return response.json();
       })
       .then((json) => {
