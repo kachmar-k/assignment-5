@@ -17,7 +17,7 @@ const WeatherPage = ({ data }) => {
   const [weatherAlert] = useState({});
   let alertText = {};
   useEffect(() => {
-    let response = fetch(
+    fetch(
       `./../../.netlify/functions/weatherAlertsApi?zoneId=${weather.zoneId}`,
       {
         method: "GET",
@@ -27,8 +27,6 @@ const WeatherPage = ({ data }) => {
         return result.json();
       })
       .then((json) => {
-        if (json.data) {
-        }
         if (json.isActive) {
           alertText = json;
           alert(`${weather.name} Weather Alert \n ${alertText.alert}`);
