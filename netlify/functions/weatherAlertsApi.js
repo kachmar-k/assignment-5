@@ -16,7 +16,6 @@ const handler = async function (event, context) {
     console.error(`Error with request.`, {
       statusCode: 500,
       body: {
-        apiUrl,
         message: JSON.stringify(error.message),
       },
     });
