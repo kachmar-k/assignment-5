@@ -12,9 +12,10 @@ const fetchRequest = async (api, parameters, cache) => {
   if (cache === false) {
     response = await fetch(requestUrl, {
       method: "GET",
-    }).json();
-    console.log(response);
-    return response;
+    });
+    const data = response.json();
+    console.log(data);
+    return data;
   }
   response = await eleventyFetch(requestUrl, {
     duration: cacheDuration,
