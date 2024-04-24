@@ -10,7 +10,7 @@ const fetchRequest = async (api, parameters, cache) => {
   let requestUrl = `${baseUrl}?${queryString}`;
   console.log(requestUrl);
   if (cache === false) {
-    respose = await fetch(requestUrl, {
+    response = await fetch(requestUrl, {
       method: "GET",
     });
     console.log(response);
